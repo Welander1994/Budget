@@ -11,22 +11,53 @@
 <body>
     <h1>Budget regner</h1>
 <section>
+    <div id=udgifter>
+    
     <div>
-        
-        <h3>Indkomst</h3>
-        <input type="text" name="indkomst" id="indkomst" placeholder="Indkomst"></p>
-        <h3>Udgifter</h3>
+        <h3>Indtægt</h3>
+        <input type="text" name="su" id="su" placeholder="SU"></p>
+        <input type="text" name="job" id="job" placeholder="Job"></p>
+    </div>
+
+        <br>
+
+    <div>
+        <h3>Fast udgifter</h3>
         <input type="text" name="husleje" id="husleje" placeholder="Husleje"></p>
+        <input type="text" name="forbrug" id="forbrug" placeholder="forbrug, fx el, vand og varme"></p>
+        <input type="text" name="transport" id="transport" placeholder="transport"></p>
+        <input type="text" name="fagforening" id="fagforening" placeholder="fagforening"></p>
+        <input type="text" name="forsikringer" id="forsikringer" placeholder="forsikringer"></p>
+        <input type="text" name="mobil" id="mobil" placeholder="mobil"></p>
+        <input type="text" name="internet" id="internet" placeholder="internet"></p>
+        <input type="text" name="licens" id="licens" placeholder="licens"></p>
+        <input type="text" name="streaming" id="streaming" placeholder="streaming"></p>
+    </div>
+
+        <br>
+
+    <div>
+        <h3>Variable udgifter</h3>
         <input type="text" name="mad" id="mad" placeholder="Mad"></p>
-        
+        <input type="text" name="tøj" id="tøj" placeholder="tøj"></p>
+        <input type="text" name="cafe" id="cafe" placeholder="Cafe"></p>
+        <input type="text" name="uforudset" id="uforudset" placeholder="Uforudset"></p>
+        <input type="text" name="opsparing" id="opsparing" placeholder="opsparing"></p>
+    </div>
+
+           <div>
+        <h3>Budget</h3>
+        <p>Samlet indkomst <span id="indkomst">...</span> kr,-</p>
+        <p>Faste udgifter <span id="fasteudgifter">...</span> kr,-</p>
+        <p>Variable udgifter <span id="variableUdgifter">...</span> kr,-</p>
+        <p>Penge til overs <span id="budget">...</span> kr,-</p>
+
         <button onclick="add()">Udregn Budget</button>
     </div>
 
-    <div>
-        <h3>Budget</h3>
-        <p>Dette er dine udgifter <span id="udgifter">...</span> kr,-</p>
-        <p>Dette er dit budget <span id="Budget">...</span> kr,- for resten af måneden</p>
     </div>
+
+
 </section>
 
 </body>

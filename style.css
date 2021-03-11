@@ -1,4 +1,6 @@
 body {
+  padding: 0;
+  margin: 0;
   font-family: "Poppins", sans-serif;
   background-color: #3e3e3d;
   color: #f5f5dc;
@@ -6,16 +8,29 @@ body {
 
 h1 {
   writing-mode: vertical-rl;
-  font-size: 8rem;
+  font-size: 7.4rem;
   padding: 0;
   margin: 0;
   position: absolute;
-  color: #f5f5dc1e;
+  color: rgba(26, 26, 25, 0.582);
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
 section {
   display: flex;
   justify-content: space-evenly;
+}
+
+#udgifter {
+  display: flex;
+}
+
+div {
+  padding: 15px;
 }
 
 input {
@@ -24,13 +39,16 @@ input {
   font-size: 16px;
   outline: 0;
   border-width: 0 0 2px;
-  border-color: #ffffff;
+  border-color: #f5f5dca6;
   background-color: #3e3e3d;
   color: #f5f5dc;
   border-style: solid;
   border-radius: 0px;
+  transition: 0.5s;
 }
-
+input:hover {
+  border-color: #fff;
+}
 input:focus {
   outline: none;
 }
@@ -44,22 +62,50 @@ input:focus {
 button {
   font-family: "Poppins", sans-serif;
   padding: 5px 17px;
-  font-size: 16px;
+  font-size: 18px;
+  text-transform: uppercase;
   outline: 0;
-  border-width: 0 0 2px;
-  border-color: #ffffff;
+  border-width: 2px;
+  border-color: #f5f5dca6;
   background-color: #3e3e3d;
-  border-color: #f5f5dc00;
   color: #f5f5dc;
   border-style: solid;
-  border-radius: 30px;
+  border-radius: 0px;
   cursor: pointer;
-  transition: 1s;
+  transition: 0.5s;
 }
 button:hover {
-  border-color: #f5f5dc;
+  border-color: #fff;
+  color: #fff;
 }
 
 button:focus {
   outline: none;
+}
+
+@media screen and (max-width: 1000px) {
+  html,
+  body {
+    width: auto !important;
+    overflow-x: hidden !important;
+  }
+
+  h1 {
+    left: 230px;
+    font-size: 6rem;
+  }
+
+  #udgifter {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section {
+    display: flex;
+    width: 255px;
+  }
+
+  div {
+    padding: 5px;
+  }
 }
