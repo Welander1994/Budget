@@ -5,20 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="javascript.js"></script>
+    <link rel="stylesheet" href="/style.css">
     <title>Budget</title>
 </head>
 <body>
-    <h3>indkomst</h3>
-    <input type="text" name="indkomst" id="indkomst" placeholder="Indkomst"></p>
-    <h3>udgifter</h3>
-    <input type="text" name="husleje" id="husleje" placeholder="husleje"></p>
-    <input type="text" name="mad" id="mad" placeholder="mad"></p>
-    
-    <button onclick="add()">Udregn Budget</button>
-    
-    <h3>Budget</h3>
-    <p>Dette er dine udgifter <span id="udgifter">...</span>kr,-</p>
-    <p>Dette er dit budget <span id="Budget">...</span>kr,- for resten af måneden</p>
-    
+    <h1>Budget regner</h1>
+<section>
+    <div>
+        
+        <h3>Indkomst</h3>
+        <input type="text" name="indkomst" id="indkomst" placeholder="Indkomst"></p>
+        <h3>Udgifter</h3>
+        <input type="text" name="husleje" id="husleje" placeholder="Husleje"></p>
+        <input type="text" name="mad" id="mad" placeholder="Mad"></p>
+        
+        <button onclick="add()">Udregn Budget</button>
+    </div>
+
+    <div>
+        <h3>Budget</h3>
+        <p>Dette er dine udgifter <span id="udgifter">...</span> kr,-</p>
+        <p>Dette er dit budget <span id="Budget">...</span> kr,- for resten af måneden</p>
+    </div>
+</section>
+
 </body>
 </html>
