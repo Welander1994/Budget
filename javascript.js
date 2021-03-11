@@ -1,8 +1,7 @@
-
+console.log("Detter er din budget regner")
 
 function add() {
     var indkomst,husleje,Budget,mad,udgifter;
-
     indkomst = Number(document.getElementById("indkomst").value);
     husleje = Number(document.getElementById("husleje").value);
     mad = Number(document.getElementById("mad").value);
@@ -28,3 +27,4 @@ function add() {
         
     }
 }
+
