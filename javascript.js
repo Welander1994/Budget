@@ -89,14 +89,13 @@ function add() {
     console.log("Variable udgifter = " + VariableUdgifter);
 
 
-    /*
+  
     if(0 > Budget ) {
         document.getElementById("budget").style.color = "red";
     }
     else {
-        document.getElementById("budget").style.color = "green";
-        
+        document.getElementById("budget").style.color = "green";    
     }
-    */
+  
 }
 
