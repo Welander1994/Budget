@@ -8,24 +8,36 @@
     <link rel="stylesheet" href="/style.css">
     <title>test</title>
 </head>
-<body onload=myFunction()>
+<body>
+    <h1>BudgetRegner_2.0</h1>
     <section>
-    <form id="test">
-        <h3>Indtægt</h3>
-        <input type="text" name="su" id="su" placeholder="SU"></p>
-        <input type="text" name="job" id="job" placeholder="Job"></p>
-        
+        <div>
+            <div id="indtægt">
+                <h3>Indtægt</h3>
+                <input type="text" name="su" id="su" placeholder="SU"></p>
+                <input type="text" name="job" id="job" placeholder="Job"></p>
+            </div>
+            <input type="text" name="addIndtægt" id="addIndtægt" placeholder="Tilføj indtægt"></p>
+            <button onclick="addIndtægt()">Tilføj</button></p>
+        </div>
 
-        
-    </form>
-
+        <div>
+            <div id="udgifter">
+                <h3>udgifter</h3>
+                <input type="text" name="huslej" id="huslej" placeholder="huslej"></p>
+                <input type="text" name="internet" id="internet" placeholder="internet"></p>
+            </div>
+            <input type="text" name="addudgifter" id="addudgifter" placeholder="Tilføj udgifter"></p>
+            <button onclick="addudgifter()">Tilføj</button></p>
+        </div>
     <div id="test1">
-        <h3>add</h3>
-        <input type="text" name="test" id="newInput" placeholder="test"></p>
-        
-        <button onclick="add()">Add input</button>
+        <h3>Budget</h3>
+        <p>Dit samletindtægt: <span id="samletindtægt">...</span></h3></p>
+        <p>Dit samletudgift: <span id="samletudgift">...</span></h3></p>
+        <p>Dit budget: <span id="budget">...</span></h3></p>
+        <p>Dit årligomkostninger: <span id="årligomkostninger">...</span></h3></p>
         <button onclick="cal()">Udregn Budget</button>
-        <button onclick="myFunction()">Udregn Budget</button>
+
     </div>
 </section>
 </body>
