@@ -52,6 +52,7 @@ function cal() {
     console.log("samletudgift " + samletudgift);
     var budget = samletindtægt - samletudgift;
     var årligomkostninger = samletudgift * 12;
+    
     console.log("budget " + budget);
     document.getElementById("samletindtægt").innerHTML = samletindtægt;
     document.getElementById("samletudgift").innerHTML = samletudgift;
