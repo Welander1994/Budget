@@ -17,16 +17,23 @@ function addIndtægt() {
 function addudgifter() {
     newUdgifter = document.getElementById("addudgifter").value;
 
-    
     var input = document.createElement("input"); 
     input.setAttribute("type", "text");
     input.setAttribute("name", newUdgifter);
     input.setAttribute("id", newUdgifter);
+    input.setAttribute("class", newUdgifter);
     input.setAttribute("placeholder", newUdgifter);
 
     var p = document.createElement("p"); 
 
+    var button = document.createElement("button"); 
+    button.setAttribute("id", newUdgifter);
+    button.setAttribute("class", newUdgifter);
+    button.textContent = "delete"
+    button.setAttribute("onclick", 'delete1(' + newUdgifter + ')'+'');
+
     document.getElementById("udgifter").appendChild(input);  
+    document.getElementById("udgifter").appendChild(button);   
     document.getElementById("udgifter").appendChild(p);   
 }
 
@@ -60,3 +67,10 @@ function cal() {
     document.getElementById("årligomkostninger").innerHTML = årligomkostninger;
 }
 
+/*
+function delete1(qwe) {
+    var myobj = document.getElementsByClassName("qwe");
+    console.log(myobj);
+}
+
+*/
