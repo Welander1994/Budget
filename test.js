@@ -3,11 +3,11 @@ function addIndtægt() {
 
     
     var input = document.createElement("input"); 
-    input.type = "text"
-    input.name = newIndtægt;
-    input.id = newIndtægt;
-    input.placeholder = newIndtægt;   
-
+    input.setAttribute("type", "text");
+    input.setAttribute("name", newIndtægt);
+    input.setAttribute("id", newIndtægt);
+    input.setAttribute("placeholder", newIndtægt);
+  
     var p = document.createElement("p"); 
 
     document.getElementById("indtægt").appendChild(input);  
@@ -19,10 +19,10 @@ function addudgifter() {
 
     
     var input = document.createElement("input"); 
-    input.type = "text"
-    input.name = newUdgifter;
-    input.id = newUdgifter;
-    input.placeholder = newUdgifter;   
+    input.setAttribute("type", "text");
+    input.setAttribute("name", newUdgifter);
+    input.setAttribute("id", newUdgifter);
+    input.setAttribute("placeholder", newUdgifter);
 
     var p = document.createElement("p"); 
 
