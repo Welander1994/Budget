@@ -6,6 +6,22 @@ body {
   color: #f5f5dc;
 }
 
+a {
+  writing-mode: vertical-rl;
+  font-size: 6rem;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  color: rgba(26, 26, 25, 0.582);
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: #f5f5dc;
+}
+
 h1 {
   writing-mode: vertical-rl;
   font-size: 6rem;

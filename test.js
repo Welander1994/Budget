@@ -43,7 +43,7 @@ function cal() {
     for (var i = 0; i < indtægt.length; i++) {
     
         console.log(indtægt[i].name, "+", indtægt[i].value);
-        samletindtægt += parseInt(indtægt[i].value);
+        samletindtægt += parseInt(indtægt[i].value || 0);
         
 }
     var samletudgift = 0;
@@ -52,7 +52,7 @@ function cal() {
 
         
         console.log(udgifter[i].name, "+", udgifter[i].value);
-        samletudgift += parseInt(udgifter[i].value);
+        samletudgift += parseInt(udgifter[i].value || 0);
         
 }
     console.log("samletindtægt " + samletindtægt);
@@ -67,10 +67,12 @@ function cal() {
     document.getElementById("årligomkostninger").innerHTML = årligomkostninger;
 }
 
+
 /*
 function delete1(qwe) {
     var myobj = document.getElementsByClassName("qwe");
     console.log(myobj);
+    myobj.remove();
 }
-
 */
+
