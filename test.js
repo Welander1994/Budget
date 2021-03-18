@@ -32,8 +32,7 @@ function addudgifter() {
     button.textContent = "delete"
     button.setAttribute("onclick", 'delete1(' + newUdgifter + ')'+'');
 
-    document.getElementById("udgifter").appendChild(input);  
-    document.getElementById("udgifter").appendChild(button);   
+    document.getElementById("udgifter").appendChild(input);    
     document.getElementById("udgifter").appendChild(p);   
 }
 
@@ -59,20 +58,25 @@ function cal() {
     console.log("samletudgift " + samletudgift);
     var budget = samletindtægt - samletudgift;
     var årligomkostninger = samletudgift * 12;
-    
+    var dagsbudget = budget / 30;
+
+
     console.log("budget " + budget);
-    document.getElementById("samletindtægt").innerHTML = samletindtægt;
-    document.getElementById("samletudgift").innerHTML = samletudgift;
-    document.getElementById("budget").innerHTML = budget;
-    document.getElementById("årligomkostninger").innerHTML = årligomkostninger;
+    document.getElementById("samletindtægt").innerHTML = samletindtægt + ",-";
+    document.getElementById("samletudgift").innerHTML = samletudgift + ",-";
+    document.getElementById("budget").innerHTML = budget + ",-";
+    document.getElementById("årligomkostninger").innerHTML = årligomkostninger + ",-";
+    document.getElementById("dagsbudget").innerHTML = dagsbudget + ",-";
 }
 
 
 /*
-function delete1(qwe) {
-    var myobj = document.getElementsByClassName("qwe");
+function delete1(newUdgifter) {
+    var myobj = document.getElementsByClassName(newUdgifter);
     console.log(myobj);
     myobj.remove();
 }
 */
+
+
 
